@@ -13,18 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@pinata/sdk": "^1.1.23",
-    "base-path-converter": "^1.0.2",
-    "canvas": "^2.8.0",
     "config": "^1.20.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.2",
     "express-rate-limit": "^6.0.4",
-    "gifencoder": "^2.0.1",
-    "mongoose": "^6.1.4",
     "morgan": "^1.10.0",
-    "promise": "^8.0.2",
-    "websocket": "^1.0.34"
+    "promise": "^8.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
