@@ -7,9 +7,12 @@ app.use(
     path.resolve(__dirname, "../client/build")));
 app.use(express.json());
 
-app.get('/', async (req, res) => {
-  res.send('OK');
-})
+const contractRouter = require('./routes/contractRoutes');
+const userRouter = require('./routes/userRoutes');
+
+app.get('/', async (req, res) => res.send('OK'));
+app.use('/api/v1/contract', contractRouter);
+app.use('/api/v1/user', userRouter);
 
 const port = process.env.PORT || 8080;
 const start = async () => {
