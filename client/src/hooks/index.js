@@ -5,3 +5,4 @@ export { useTotalFundEmitted } from './useTotalFundEmitted';
 export { useRound } from './useRound';
 export { useRecentWinner } from './useRecentWinner';
 export { useEnter } from './useEnter';
+export { useAPR } from './useAPR';

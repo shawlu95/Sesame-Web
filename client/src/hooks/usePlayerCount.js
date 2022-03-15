@@ -5,7 +5,7 @@ export const usePlayerCount = () => {
   const [count] = useContractCall({
     abi: abi,
     address: address,
-    method: 'getPlayersCount',
+    method: 'getTicketCount',
     args: [],
   }) ?? [];
   if (count) {

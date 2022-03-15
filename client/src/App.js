@@ -8,7 +8,8 @@ import {
   useEnter,
   useTotalFundEmitted,
   useRound,
-  useRecentWinner
+  useRecentWinner,
+  useAPR
 } from './hooks';
 
 const version = 'SesameBnb';
@@ -34,11 +35,14 @@ function App() {
     enter(ticket);
   };
 
+  const apr = useAPR();
+
   const currentRoundText = `第${round}轮`;
   const currentPlayerText = `参与玩家: ${count} / ${ticketPerRound}`;
   const currentRoundPrizeText = `本轮奖金：${prize} ${token}`;
   const totalFundEmittedText = `历史奖金：${totalFundEmitted} ${token}`;
   const previousWinnerText = `上轮赢家：${recentWinner}`;
+  const stakingRewardText = `质押年化收益: ${apr.toFixed(2)}%`;
 
   return (
     <div className="App">
@@ -48,6 +52,7 @@ function App() {
       <p>{currentRoundPrizeText}</p>
       <p>{totalFundEmittedText}</p>
       <p>{previousWinnerText}</p>
+      <p>{stakingRewardText}</p>
       <Grid container spacing={2}>
         <Grid item xs={6} sm={6} md={6}>
           <FormControl fullWidth sx={{ m: 1 }}>
