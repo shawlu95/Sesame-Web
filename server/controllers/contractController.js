@@ -20,26 +20,15 @@ const getRound = async (req, res) => {
 const getCurrentRoundTicket = async (req, res) => {
   const { product } = req.params;
   const contract = blockchain.getContract(product);
-  const round = await contract.methods.round().call();
-  var events = await contract.getPastEvents("EnterTicket", {
-    fromBlock: 17400756, toBlock: 'latest'
-  });
-  events = events
-    .map(x => x.returnValues)
-    .filter(event => event.round == round);
-  return res.status(200).json({ count: events.length, events });
+  const count = await contract.methods.getTicketCount().call();
+  return res.status(200).json({ count });
 };
 
 const getTicketForRound = async (req, res) => {
-  const { product, round } = req.params;
+  const { product, round, player } = req.params;
   const contract = blockchain.getContract(product);
-  var events = await contract.getPastEvents("EnterTicket", {
-    fromBlock: 17400756, toBlock: 'latest'
-  });
-  events = events
-    .map(x => x.returnValues)
-    .filter(event => event.round == round);
-  return res.status(200).json({ count: events.length, events });
+  const count = await contract.methods.getUserTicketCount(round, player).call();
+  return res.status(200).json({ count });
 };
 
 const getRecentWinner = async (req, res) => {

@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const connectDB = require('./db/connect');
 
 app.use(
   express.static(
@@ -8,15 +9,18 @@ app.use(
 app.use(express.json());
 
 const contractRouter = require('./routes/contractRoutes');
-const userRouter = require('./routes/userRoutes');
+const playerRouter = require('./routes/playerRoutes');
+const creditRouter = require('./routes/creditRoutes');
 
 app.get('/', async (req, res) => res.send('OK'));
 app.use('/api/v1/contract', contractRouter);
-app.use('/api/v1/user', userRouter);
+app.use('/api/v1/player', playerRouter);
+app.use('/api/v1/credit', creditRouter);
 
 const port = process.env.PORT || 8080;
 const start = async () => {
   try {
+    await connectDB(process.env.MONGO_URI);
     app.listen(port);
     console.log(`Listening on port ${port}...`);
   } catch (error) {
