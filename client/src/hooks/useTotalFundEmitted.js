@@ -1,8 +1,8 @@
 // import { Web3 } from 'web3';
 import { useContractCall } from "@usedapp/core";
 import { useSesame } from './useSesame';
-export const useTotalFundEmitted = () => {
-  const [address, abi, chainId] = useSesame();
+export const useTotalFundEmitted = (token, index) => {
+  const [address, abi, chainId] = useSesame(token, index);
   const [totalFundEmitted] = useContractCall({
     abi: abi,
     address: address,

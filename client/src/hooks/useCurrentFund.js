@@ -1,7 +1,7 @@
 import { useContractCall } from "@usedapp/core";
 import { useSesame } from './useSesame';
-export const useCurrentFund = () => {
-  const [address, abi, chainId] = useSesame();
+export const useCurrentFund = (token, index) => {
+  const [address, abi, chainId] = useSesame(token, index);
   const [currentFund] = useContractCall({
     abi: abi,
     address: address,

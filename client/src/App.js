@@ -9,30 +9,32 @@ import {
   useTotalFundEmitted,
   useRound,
   useRecentWinner,
-  useAPR
+  useAPR,
+  useApprove
 } from './hooks';
 
 const token = 'BNB';
-const version = 3;
+const native = token == 'BNB';
+const index = 3;
 const {
-  name, pricePerTicket, prize, ticketPerRound
-} = config[token][version];
+  name, pricePerTicket, prize, ticketPerRound, address
+} = config[token][index];
 
 function App() {
-  const { account, activateBrowserWallet } = useEthers();
+  const { account } = useEthers();
   const [ticket, setTicket] = useState(1);
-  const count = usePlayerCount();
-  const recentWinner = useRecentWinner();
-  const totalFundEmitted = useTotalFundEmitted();
-  const round = useRound();
-  const { enter } = useEnter(pricePerTicket);
+  const count = usePlayerCount(token, index);
+  const recentWinner = useRecentWinner(token, index);
+  const totalFundEmitted = useTotalFundEmitted(token, index);
+  const round = useRound(token, index);
+  const { enter } = useEnter(token, index, pricePerTicket, native);
+  const { approve } = useApprove(token, index, pricePerTicket);
 
   const selectTikcet = (event) => {
     let text = event.target.value;
     setTicket(parseInt(text));
   };
   const buyTicket = (event) => {
-    const payable = ticket * pricePerTicket;
     enter(ticket);
   };
 
@@ -80,12 +82,17 @@ function App() {
           </FormControl>
         </Grid>
         <Grid item xs={12}>
-          <Button
+          {/* <Button
             onClick={() => activateBrowserWallet()}
             disabled={account != undefined}
             variant='outlined'>
             {account != undefined ? "Connected" : "Connect"}
-          </Button>
+          </Button> */}
+          {native || <Button
+            onClick={() => approve(address, ticket)}
+            variant='outlined'>
+            Approve
+          </Button>}
           <Button
             onClick={buyTicket}
             disabled={account == undefined}
