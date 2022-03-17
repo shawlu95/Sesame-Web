@@ -2,11 +2,11 @@ import { useContractCall } from "@usedapp/core";
 import { useSesame } from './useSesame';
 export const useRecentWinner = () => {
   const [address, abi, chainId] = useSesame();
-  const [recentWinner] = useContractCall({
+  const [lastWinner] = useContractCall({
     abi: abi,
     address: address,
-    method: 'recentWinner',
+    method: 'lastWinner',
     args: [],
   }) ?? [];
-  return recentWinner;
+  return lastWinner;
 }

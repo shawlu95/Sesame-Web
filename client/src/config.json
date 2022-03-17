@@ -1,13 +1,13 @@
 {
   "SesameBnb": {
     "name": "BNB 钻石盒子",
-    "address": "0x9aec5565a530977dae6De3d6C9C2b30d057D749D",
+    "address": "0xCbC2E5a5d8b67035468F824Cd011b99fed9e4988",
     "pricePerTicket": 0.105,
     "ticketPerRound": 10,
     "token": "BNB",
     "prize": 1
   },
   "TokenDistributor": {
-    "address": "0xB8b42D30d7d4E407e3B43a9CC4feA0c6E6816a3C"
+    "address": "0x2Ece413d737eD625FeD3Db8E932A1D8B47303dd0"
   }
 }
