@@ -1,12 +1,175 @@
 {
-  "SesameBnb": {
-    "name": "BNB 钻石盒子",
-    "address": "0xCbC2E5a5d8b67035468F824Cd011b99fed9e4988",
-    "pricePerTicket": 0.105,
-    "ticketPerRound": 10,
-    "token": "BNB",
-    "prize": 1
-  },
+  "BNB": [
+    {
+      "name": "BNB 屌丝盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.0105,
+      "ticketPerRound": 2,
+      "prize": 0.02
+    },
+    {
+      "name": "BNB 乞丐盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.0105,
+      "ticketPerRound": 5,
+      "prize": 0.05
+    },
+    {
+      "name": "BNB 百人斩",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.0105,
+      "ticketPerRound": 100,
+      "prize": 1
+    },
+    {
+      "name": "BNB 金手指",
+      "address": "0xCbC2E5a5d8b67035468F824Cd011b99fed9e4988",
+      "pricePerTicket": 0.105,
+      "ticketPerRound": 10,
+      "prize": 1
+    },
+    {
+      "name": "BNB 决斗",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.55,
+      "ticketPerRound": 2,
+      "prize": 1
+    },
+    {
+      "name": "BNB 决斗",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 1.1,
+      "ticketPerRound": 2,
+      "prize": 2
+    }
+  ],
+  "BUSD": [
+    {
+      "name": "BUSD 屌丝盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 5.5,
+      "ticketPerRound": 2,
+      "prize": 10
+    },
+    {
+      "name": "BUSD 美团盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 27.5,
+      "ticketPerRound": 2,
+      "prize": 50
+    },
+    {
+      "name": "BUSD 团圆盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 55,
+      "ticketPerRound": 2,
+      "prize": 100
+    },
+    {
+      "name": "BUSD 土豪盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 550,
+      "ticketPerRound": 2,
+      "prize": 1000
+    },
+    {
+      "name": "BUSD 咸鱼盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 1.05,
+      "ticketPerRound": 10,
+      "prize": 10
+    },
+    {
+      "name": "BUSD 百元斩",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 1.05,
+      "ticketPerRound": 100,
+      "prize": 100
+    },
+    {
+      "name": "BUSD 千人购",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 1.05,
+      "ticketPerRound": 100,
+      "prize": 100
+    }
+  ],
+  "SEMI": [
+    {
+      "name": "芝麻屌丝盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 10.5,
+      "ticketPerRound": 2,
+      "prize": 20
+    },
+    {
+      "name": "芝麻小资盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 55,
+      "ticketPerRound": 2,
+      "prize": 100
+    },
+    {
+      "name": "芝麻土豪盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 550,
+      "ticketPerRound": 2,
+      "prize": 1000
+    },
+    {
+      "name": "芝麻屌丝盒",
+      "address": "0x171C21Db5016A7773a9eE4E06852Cc34B933A8B2",
+      "pricePerTicket": 1.05,
+      "ticketPerRound": 10,
+      "prize": 10
+    },
+    {
+      "name": "芝麻百元盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 10.5,
+      "ticketPerRound": 100,
+      "prize": 100
+    },
+    {
+      "name": "芝麻千金盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 10.5,
+      "ticketPerRound": 1000,
+      "prize": 1000
+    }
+  ],
+  "BTC": [
+    {
+      "name": "BTC土豪盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.0105,
+      "ticketPerRound": 2,
+      "prize": 0.02
+    },
+    {
+      "name": "BTC千人购",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.00105,
+      "ticketPerRound": 1000,
+      "prize": 1.0
+    }
+  ],
+  "ETH": [
+    {
+      "name": "ETH土豪盒",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.105,
+      "ticketPerRound": 2,
+      "prize": 0.2
+    },
+    {
+      "name": "ETH千人购",
+      "address": "0x0000000000000000000000000000000000000000",
+      "pricePerTicket": 0.00105,
+      "ticketPerRound": 1000,
+      "prize": 1.0
+    }
+  ],
   "TokenDistributor": {
     "address": "0x2Ece413d737eD625FeD3Db8E932A1D8B47303dd0"
   }

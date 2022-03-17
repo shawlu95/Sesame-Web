@@ -13,9 +13,7 @@ export const useEnter = (pricePerTicket) => {
   })
   const enter = (tickets) => {
     const ether = tickets * pricePerTicket;
-    return send(tickets, {
-      value: utils.parseEther(ether.toString())
-    });
+    return send(tickets);
   };
   return { enter, mintState };
 }

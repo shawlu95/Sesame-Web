@@ -12,10 +12,11 @@ import {
   useAPR
 } from './hooks';
 
-const version = 'SesameBnb';
+const token = 'BNB';
+const version = 3;
 const {
-  name, pricePerTicket, token, prize, ticketPerRound
-} = config[version];
+  name, pricePerTicket, prize, ticketPerRound
+} = config[token][version];
 
 function App() {
   const { account, activateBrowserWallet } = useEthers();
@@ -71,7 +72,7 @@ function App() {
             <TextField
               color='grey'
               id="title"
-              label="Payable (BNB)"
+              label={`Payable ${token}`}
               value={ticket * pricePerTicket}
               variant="standard"
               disabled={true}

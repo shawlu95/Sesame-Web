@@ -1,5 +1,10 @@
 const blockchain = require('../utils/blockchain');
 
+const getAll = (req, res) => {
+  const product = require('../../client/src/config.json');
+  res.status(200).json(product);
+};
+
 const getAddress = (req, res) => {
   const { product } = req.params;
   const address = blockchain.getAddress(product);
@@ -39,5 +44,5 @@ const getRecentWinner = async (req, res) => {
 };
 
 module.exports = {
-  getAddress, getRound, getCurrentRoundTicket, getTicketForRound, getRecentWinner
+  getAll, getAddress, getRound, getCurrentRoundTicket, getTicketForRound, getRecentWinner
 };

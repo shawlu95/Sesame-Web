@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const contract = require('../controllers/contractController');
 
+router.route('/').get(contract.getAll);
 router.route('/:product/address').get(contract.getAddress);
 router.route('/:product/round').get(contract.getRound);
 router.route('/:product/ticket').get(contract.getCurrentRoundTicket);
