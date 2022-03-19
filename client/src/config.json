@@ -175,5 +175,8 @@
   },
   "SesameToken": {
     "address": "0x3415b8416a4B3f1E0f8acac6438bbdEF9385dC60"
+  },
+  "Accountant": {
+    "address": "0x1dD6a3c05dDc58527741dBB8a515a581ad460cca"
   }
 }

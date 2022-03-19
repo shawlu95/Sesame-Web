@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 const CreditSchema = new mongoose.Schema({
   _textId: mongoose.Schema.Types.ObjectId,
   player: String,
+  accountant: String,
   product: String,
   round: Number,
   ticket: Number,

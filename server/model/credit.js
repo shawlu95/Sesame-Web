@@ -3,6 +3,7 @@ const Credit = require("../schema/credit");
 async function patch(data) {
   const query = {
     player: data.player,
+    accountant: data.accountant,
     product: data.product,
     round: data.round,
     ticket: data.ticket,

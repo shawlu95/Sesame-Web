@@ -8,7 +8,6 @@ const getAll = (req, res) => {
 const getAddress = (req, res) => {
   const { product } = req.params;
   const address = blockchain.getAddress(product);
-  console.log(address)
   if (address != undefined) {
     return res.status(200).json({ address });
   }

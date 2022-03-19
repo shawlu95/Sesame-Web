@@ -9,8 +9,9 @@ const syncEvents = async (req, res) => {
 
   const interval = 5000;
   const contract = blockchain.getContract('Accountant');
+  const address = blockchain.getAddress('Accountant');
   const latest = await CreditSchema.find().sort({ block: -1 }).limit(1);
-  const startBlock = latest[0].block;
+  const startBlock = latest[0] ? latest[0].block : 17627472;
 
   var fromBlock = startBlock;
   while (fromBlock < endBlock) {
@@ -23,12 +24,14 @@ const syncEvents = async (req, res) => {
       await Credit.patch({
         block: event.blockNumber,
         player: data.player,
+        accountant: address,
         product: data.product,
         round: parseInt(data.round),
         ticket: parseInt(data.ticket),
         point: data.point
       });
     }
+    console.log(fromBlock, toBlock, events.length)
     fromBlock += interval;
   }
   res.status(StatusCodes.OK).json({ fromBlock, toBlock });

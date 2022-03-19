@@ -1,15 +1,12 @@
 require('dotenv').config();
 const Web3 = require('web3');
+const config = require('../../client/src/config.json');
 
 // https://data-seed-prebsc-1-s1.binance.org:8545
 const web3 = new Web3(process.env.NODE_URL);
 
 const getAddress = (contract) => {
-  return {
-    'Accountant': '0x37A2BFC6f7d01108a8CF2D3E4f8de4C4B79434FF',
-    'SesameNative': '0x9aec5565a530977dae6De3d6C9C2b30d057D749D',
-    'SesameNativeAsync': '0xCbC2E5a5d8b67035468F824Cd011b99fed9e4988'
-  }[contract];
+  return config[contract].address;
 };
 
 const getArtifact = (contract) => {
