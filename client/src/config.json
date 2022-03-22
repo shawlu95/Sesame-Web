@@ -9,6 +9,7 @@
   },
   "97": {
     "BNB": {
+      "tokenAddress": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
       "products": [
         {
           "name": "BNB 钻石盒子",
@@ -274,7 +275,7 @@
       ]
     },
     "ETH": {
-      "tokenAddress": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      "tokenAddress": "0x8babbb98678facc7342735486c851abd7a0d17ca",
       "products": [
         {
           "name": "ETH 铂金盒子",

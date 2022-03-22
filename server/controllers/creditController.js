@@ -3,9 +3,8 @@ const CreditSchema = require("../schema/credit");
 const blockchain = require('../utils/blockchain');
 const { StatusCodes } = require('http-status-codes');
 
-const syncEvents = async (req, res) => {
-  let { endBlock } = req.params;
-  endBlock = parseInt(endBlock);
+const _syncEvents = async () => {
+  endBlock = blockchain.getCurrentBlock();
 
   const interval = 5000;
   const contract = blockchain.getContract('Accountant');
@@ -14,6 +13,7 @@ const syncEvents = async (req, res) => {
   const startBlock = latest[0] ? latest[0].block : 17627472;
 
   var fromBlock = startBlock;
+  var eventCount = 0;
   while (fromBlock < endBlock) {
     var toBlock = Math.min(fromBlock + interval, endBlock);
     var events =
@@ -30,11 +30,21 @@ const syncEvents = async (req, res) => {
         ticket: parseInt(data.ticket),
         point: data.point
       });
+      eventCount += events.length;
     }
-    console.log(fromBlock, toBlock, events.length)
     fromBlock += interval;
   }
-  res.status(StatusCodes.OK).json({ fromBlock, toBlock });
+  return { startBlock, endBlock, eventCount };
+};
+
+const syncEvents = async (req, res) => {
+  const { startBlock, endBlock, eventCount } = await _syncEvents();
+  res.status(StatusCodes.OK).json({ startBlock, endBlock, eventCount });
 }
 
-module.exports = { syncEvents };
+const calcReward = async (req, res) => {
+  await _syncEvents();
+
+};
+
+module.exports = { syncEvents, calcReward };
