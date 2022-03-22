@@ -14,7 +14,7 @@ export const useEnter = (token, index, pricePerTicket, native) => {
   })
   const enter = (ticket) => {
     if (native) {
-      const ether = parseEther(pricePerTicket).mul(ticket);
+      const ether = pricePerTicket.mul(ticket);
       send(ticket, { value: ether.toString() });
     } else {
       send(ticket);

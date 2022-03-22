@@ -5,7 +5,7 @@ import Product from '../artifacts/contracts/SesameToken.sol/SesameToken.json';
 
 export const useSesameToken = () => {
   const { chainId } = useEthers();
-  const address = config.SesameToken.address;
+  const address = config['97'].SESA.tokenAddress;
   const abi = new utils.Interface(Product.abi);
   return [address, abi, chainId];
 };

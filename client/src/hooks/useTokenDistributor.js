@@ -5,7 +5,7 @@ import TokenDistributor from '../artifacts/contracts/TokenDistributor.sol/TokenD
 
 export const useTokenDistributor = () => {
   const { chainId } = useEthers();
-  const address = config.TokenDistributor.address;
+  const address = config['97'].TokenDistributor.address;
   const abi = new utils.Interface(TokenDistributor.abi);
   return [address, abi, chainId];
 };

@@ -12,7 +12,7 @@ export const useApprove = (token, index, pricePerTicket) => {
   });
 
   const approve = (spender, ticket) => {
-    const ether = parseEther(pricePerTicket).mul(ticket);
+    const ether = pricePerTicket.mul(ticket);
     return send(spender, ether.toString());
   };
   return { approve, mintState };

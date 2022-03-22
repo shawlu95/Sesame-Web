@@ -12,13 +12,18 @@ import {
   useAPR,
   useApprove
 } from './hooks';
+import { parseEther } from 'ethers/lib/utils';
+const { ethers } = require("ethers");
 
+const chainId = "97";
 const token = 'BNB';
 const native = token == 'BNB';
-const index = 3;
+const index = 6;
+const fee = 0.05;
+
 const {
-  name, pricePerTicket, prize, ticketPerRound, address
-} = config[token][index];
+  name, address, pricePerTicket, ticketPerRound,
+} = config[chainId][token]['products'][index];
 
 function App() {
   const { account } = useEthers();
@@ -27,22 +32,30 @@ function App() {
   const recentWinner = useRecentWinner(token, index);
   const totalFundEmitted = useTotalFundEmitted(token, index);
   const round = useRound(token, index);
-  const { enter } = useEnter(token, index, pricePerTicket, native);
-  const { approve } = useApprove(token, index, pricePerTicket);
+
+  const netPricePerTicket = parseEther(pricePerTicket).mul(105).div(100);
+  const { enter } = useEnter(token, index, netPricePerTicket, fee, native);
+  const { approve } = useApprove(token, index, netPricePerTicket, fee);
 
   const selectTikcet = (event) => {
     let text = event.target.value;
     setTicket(parseInt(text));
   };
+
   const buyTicket = (event) => {
     enter(ticket);
   };
 
   const apr = useAPR();
+  const prize = netPricePerTicket.mul(ticketPerRound);
+
+  const toEther = (weiValue) => {
+    return ethers.utils.formatEther(weiValue);
+  };
 
   const currentRoundText = `第${round}轮`;
   const currentPlayerText = `参与玩家: ${count} / ${ticketPerRound}`;
-  const currentRoundPrizeText = `本轮奖金：${prize} ${token}`;
+  const currentRoundPrizeText = `本轮奖金：${toEther(prize)} ${token}`;
   const totalFundEmittedText = `历史奖金：${totalFundEmitted} ${token}`;
   const previousWinnerText = `上轮赢家：${recentWinner}`;
   const stakingRewardText = `质押年化收益: ${apr.toFixed(2)}%`;
@@ -75,7 +88,7 @@ function App() {
               color='grey'
               id="title"
               label={`Payable ${token}`}
-              value={ticket * pricePerTicket}
+              value={toEther(netPricePerTicket.mul(ticket))}
               variant="standard"
               disabled={true}
             />
