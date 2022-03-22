@@ -1,8 +1,6 @@
 import { useContractFunction, useEthers } from "@usedapp/core";
 import { Contract } from "@ethersproject/contracts";
-import { constants, utils } from "ethers"
 import { useSesame } from './useSesame';
-import { parseEther } from "ethers/lib/utils";
 
 
 export const useEnter = (token, index, pricePerTicket, native) => {

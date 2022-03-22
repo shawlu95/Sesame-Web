@@ -19,7 +19,7 @@ const chainId = "97";
 const token = 'BNB';
 const native = token == 'BNB';
 const index = 6;
-const fee = 0.05;
+const fee = 5; // percent
 
 const {
   name, address, pricePerTicket, ticketPerRound,
@@ -33,7 +33,7 @@ function App() {
   const totalFundEmitted = useTotalFundEmitted(token, index);
   const round = useRound(token, index);
 
-  const netPricePerTicket = parseEther(pricePerTicket).mul(105).div(100);
+  const netPricePerTicket = parseEther(pricePerTicket).mul(100 + fee).div(100);
   const { enter } = useEnter(token, index, netPricePerTicket, fee, native);
   const { approve } = useApprove(token, index, netPricePerTicket, fee);
 

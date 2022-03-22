@@ -1,5 +1,5 @@
 import { useEthers } from '@usedapp/core';
-import { constants, utils } from "ethers";
+import { utils } from "ethers";
 import config from '../config.json';
 import Product from '../artifacts/contracts/SesameGame.sol/SesameGame.json';
 
