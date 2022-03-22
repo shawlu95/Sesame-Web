@@ -1,5 +1,6 @@
 require('dotenv').config();
 const Web3 = require('web3');
+const ethers = require('ethers');
 const config = require('../../client/src/config.json');
 const chainId = '97';
 const servers = {
@@ -7,6 +8,19 @@ const servers = {
 }
 
 const web3 = new Web3(servers[chainId]);
+
+/**
+ * Convert to a MerkleTree node
+ * @param {Valid address with prefix 0x} player 
+ * @param {BigNumber} amount 
+ * @returns 
+ */
+const toMerkleLeaf = (player, amount) => {
+  return Buffer.from(ethers.utils.solidityKeccak256(
+    ['address', 'uint256'],
+    [player, amount.toString()]
+  ).slice(2), 'hex');
+};
 
 const getAddress = (contract) => {
   return config[chainId][contract].address;
@@ -29,6 +43,7 @@ const getContract = (contract) => {
 };
 
 module.exports = {
+  toMerkleLeaf,
   getAddress,
   getContract,
   getCurrentBlock

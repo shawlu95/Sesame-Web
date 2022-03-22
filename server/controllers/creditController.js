@@ -2,6 +2,10 @@ const Credit = require('../model/credit');
 const CreditSchema = require("../schema/credit");
 const blockchain = require('../utils/blockchain');
 const { StatusCodes } = require('http-status-codes');
+const { parseEther } = require("ethers/lib/utils");
+const { BigNumber } = require('ethers');
+const { MerkleTree } = require('merkletreejs');
+const keccak256 = require('keccak256');
 
 const _syncEvents = async () => {
   endBlock = blockchain.getCurrentBlock();
@@ -45,6 +49,32 @@ const syncEvents = async (req, res) => {
 const calcReward = async (req, res) => {
   await _syncEvents();
 
+  const sum = {
+    '0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e': new BigNumber.from('5250000000000000000'),
+    '0xbEF5C732b77A78F8C752704FC598cF68b34A0E5d': new BigNumber.from('5250000000000000000')
+  }
+  const totalCredit = new BigNumber.from('5250000000000000000');
+  const amount = new BigNumber.from('5250000000000000000');
+  const leavesEncoded = [];
+  const leavesMap = {}
+  for (const [address, credit] of Object.entries(sum)) {
+    let reward = amount.mul(credit).div(totalCredit);
+    let leaf = blockchain.toMerkleLeaf(address, reward);
+    leavesEncoded.push(leaf);
+    leavesMap[address] = { reward, leaf };
+  }
+
+  console.log(leavesEncoded)
+
+  const tree = new MerkleTree(leavesEncoded, keccak256, { sortPairs: true });
+  const root = tree.getHexRoot(); // set this as root node in contract
+  console.log('root', root);
+
+  for (const [address, data] of Object.entries(leavesMap)) {
+    leavesMap[address].proof = tree.getHexProof(data.leaf)
+  }
+  console.log(leavesMap);
+  res.status(200).json({ root });
 };
 
 module.exports = { syncEvents, calcReward };
