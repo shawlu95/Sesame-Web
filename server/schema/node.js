@@ -7,12 +7,22 @@ const NodeSchema = new mongoose.Schema({
     leaf: Buffer,
     proof: [String],
     root: String,
-    block: Number
+    block: Number,
+    round: Number
 });
+
+NodeSchema.statics.getLatestRoot = async function ({ accountant }) {
+    const result = await this.find({ accountant })
+        .sort({ block: -1 })
+        .limit(1);
+    if (result.length == 0)
+        return undefined
+    return result[0].root;
+};
 
 NodeSchema.statics.findByUser = async function ({ accountant, player }) {
     const result = await this.find({ accountant, player })
-        .sort({ block: -1 })
+        .sort({ round: -1 })
         .limit(1);
     if (result.length == 0)
         return undefined

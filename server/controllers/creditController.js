@@ -12,6 +12,7 @@ const keccak256 = require('keccak256');
 const refBlock = 17627472;
 const contract = blockchain.getContract('Accountant');
 const accountant = blockchain.getAddress('Accountant');
+const rewardDistributor = blockchain.getContract('PlayerRewardsDistributor');
 const eventPageSize = 5000;
 const rewardPeriodLength = 28800;
 const currentBlock = blockchain.getCurrentBlock();
@@ -101,6 +102,9 @@ const _buildTree = async () => {
     leavesMap[address] = { reward, leaf, block };
   }
 
+  const round = await rewardDistributor.methods
+    .currentRewardRound().call();
+
   const tree = new MerkleTree(leavesEncoded, keccak256, { sortPairs: true });
   const root = tree.getHexRoot();
   for (const [address, data] of Object.entries(leavesMap)) {
@@ -111,7 +115,8 @@ const _buildTree = async () => {
       leaf: data.leaf,
       proof: tree.getHexProof(data.leaf),
       root,
-      block: data.block
+      block: data.block,
+      round: parseInt(round)
     });
   }
 
