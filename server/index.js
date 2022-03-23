@@ -11,11 +11,13 @@ app.use(express.json());
 const contractRouter = require('./routes/contractRoutes');
 const playerRouter = require('./routes/playerRoutes');
 const creditRouter = require('./routes/creditRoutes');
+const nodeRouter = require('./routes/nodeRoutes');
 
 app.get('/', async (req, res) => res.send('OK'));
 app.use('/api/v1/contract', contractRouter);
 app.use('/api/v1/player', playerRouter);
 app.use('/api/v1/credit', creditRouter);
+app.use('/api/v1/node', nodeRouter);
 
 const port = process.env.PORT || 8080;
 const start = async () => {

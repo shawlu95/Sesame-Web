@@ -1,80 +1,137 @@
 const Credit = require('../model/credit');
+const Reward = require('../model/reward');
+const Node = require('../model/node');
 const CreditSchema = require("../schema/credit");
+const RewardSchema = require("../schema/reward");
 const blockchain = require('../utils/blockchain');
 const { StatusCodes } = require('http-status-codes');
 const { parseEther } = require("ethers/lib/utils");
-const { BigNumber } = require('ethers');
 const { MerkleTree } = require('merkletreejs');
 const keccak256 = require('keccak256');
 
-const _syncEvents = async () => {
-  endBlock = blockchain.getCurrentBlock();
+const refBlock = 17627472;
+const contract = blockchain.getContract('Accountant');
+const accountant = blockchain.getAddress('Accountant');
+const eventPageSize = 5000;
+const rewardPeriodLength = 28800;
+const currentBlock = blockchain.getCurrentBlock();
 
-  const interval = 5000;
-  const contract = blockchain.getContract('Accountant');
-  const address = blockchain.getAddress('Accountant');
-  const latest = await CreditSchema.find().sort({ block: -1 }).limit(1);
-  const startBlock = latest[0] ? latest[0].block : 17627472;
+const _syncEvents = async () => {
+  const latest = await CreditSchema.latestEvent(accountant);
+  const startBlock = latest ? latest.block : refBlock;
 
   var fromBlock = startBlock;
   var eventCount = 0;
-  while (fromBlock < endBlock) {
-    var toBlock = Math.min(fromBlock + interval, endBlock);
-    var events =
-      await contract.getPastEvents("Credit", { fromBlock, toBlock });
+  while (fromBlock < currentBlock) {
+    var toBlock = Math.min(fromBlock + eventPageSize, currentBlock);
+    var events = await contract.getPastEvents("Credit", { fromBlock, toBlock });
     for (let i = 0; i < events.length; i++) {
       let event = events[i];
       let data = event.returnValues;
       await Credit.patch({
         block: event.blockNumber,
         player: data.player,
-        accountant: address,
+        accountant: accountant,
         product: data.product,
         round: parseInt(data.round),
         ticket: parseInt(data.ticket),
         point: data.point
       });
-      eventCount += events.length;
     }
-    fromBlock += interval;
+    eventCount += events.length;
+    fromBlock += eventPageSize;
   }
-  return { startBlock, endBlock, eventCount };
+  return { startBlock, currentBlock, eventCount };
+};
+
+const _calcReward = async () => {
+  const firstEvent = await CreditSchema.firstEvent(accountant);
+  const startBlock = firstEvent ? firstEvent.block : refBlock;
+
+  var fromBlock = startBlock;
+  var toBlock = fromBlock + rewardPeriodLength;
+  var period = 0;
+  while (toBlock < currentBlock) {
+    const credits = await CreditSchema.calculateCredit({
+      accountant, fromBlock, toBlock
+    });
+
+    var totalCredit = await CreditSchema.calculateTotalCredit({
+      accountant, fromBlock, toBlock
+    });
+    totalCredit = blockchain.toBigNumber(totalCredit);
+
+    // TODO: adjust for period change
+    var periodReward = parseEther('2.8').mul(rewardPeriodLength);
+    for (var i = 0; i < credits.length; i++) {
+      var { _id: address, credit } = credits[i];
+      credit = blockchain.toBigNumber(credit);
+
+      var reward = periodReward.mul(credit).div(totalCredit);
+      await Reward.patch({
+        player: address,
+        accountant,
+        period,
+        fromBlock,
+        toBlock,
+        userCredit: credit,
+        periodCredit: totalCredit,
+        userReward: reward,
+        periodReward
+      });
+    }
+
+    period += 1;
+    fromBlock += rewardPeriodLength;
+    toBlock += rewardPeriodLength;
+  }
+  return { period };
+};
+
+const _buildTree = async () => {
+  await _calcReward();
+  const leavesEncoded = [];
+  const leavesMap = {}
+  const rewards = await RewardSchema.sumReward({ accountant });
+  for (var i = 0; i < rewards.length; i++) {
+    let { _id: address, reward, block } = rewards[i];
+    reward = blockchain.toBigNumber(reward);
+    let leaf = blockchain.toMerkleLeaf(address, reward);
+    leavesEncoded.push(leaf);
+    leavesMap[address] = { reward, leaf, block };
+  }
+
+  const tree = new MerkleTree(leavesEncoded, keccak256, { sortPairs: true });
+  const root = tree.getHexRoot();
+  for (const [address, data] of Object.entries(leavesMap)) {
+    await Node.patch({
+      player: address,
+      accountant,
+      reward: data.reward,
+      leaf: data.leaf,
+      proof: tree.getHexProof(data.leaf),
+      root,
+      block: data.block
+    });
+  }
+
+  return { root };
 };
 
 const syncEvents = async (req, res) => {
-  const { startBlock, endBlock, eventCount } = await _syncEvents();
-  res.status(StatusCodes.OK).json({ startBlock, endBlock, eventCount });
-}
+  const { startBlock, currentBlock, eventCount } = await _syncEvents();
+  res.status(StatusCodes.OK).json({ startBlock, currentBlock, eventCount });
+};
 
 const calcReward = async (req, res) => {
   await _syncEvents();
+  const { period } = await _calcReward();
+  return res.status(200).json({ period });
+};
 
-  const sum = {
-    '0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e': new BigNumber.from('5250000000000000000'),
-    '0xbEF5C732b77A78F8C752704FC598cF68b34A0E5d': new BigNumber.from('5250000000000000000')
-  }
-  const totalCredit = new BigNumber.from('5250000000000000000');
-  const amount = new BigNumber.from('5250000000000000000');
-  const leavesEncoded = [];
-  const leavesMap = {}
-  for (const [address, credit] of Object.entries(sum)) {
-    let reward = amount.mul(credit).div(totalCredit);
-    let leaf = blockchain.toMerkleLeaf(address, reward);
-    leavesEncoded.push(leaf);
-    leavesMap[address] = { reward, leaf };
-  }
-
-  console.log(leavesEncoded)
-
-  const tree = new MerkleTree(leavesEncoded, keccak256, { sortPairs: true });
-  const root = tree.getHexRoot(); // set this as root node in contract
-  console.log('root', root);
-
-  for (const [address, data] of Object.entries(leavesMap)) {
-    leavesMap[address].proof = tree.getHexProof(data.leaf)
-  }
-  console.log(leavesMap);
+const buildTree = async (req, res) => {
+  const { root } = await _buildTree();
   res.status(200).json({ root });
 };
 
-module.exports = { syncEvents, calcReward };
+module.exports = { syncEvents, calcReward, buildTree };

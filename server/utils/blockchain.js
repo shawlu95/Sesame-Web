@@ -22,6 +22,15 @@ const toMerkleLeaf = (player, amount) => {
   ).slice(2), 'hex');
 };
 
+const toBigString = (bigInt) => {
+  return bigInt.toLocaleString('fullwide', { useGrouping: false });
+};
+
+const toBigNumber = (bigInt) => {
+  const str = toBigString(bigInt);
+  return new ethers.BigNumber.from(str);
+};
+
 const getAddress = (contract) => {
   return config[chainId][contract].address;
 };
@@ -44,6 +53,8 @@ const getContract = (contract) => {
 
 module.exports = {
   toMerkleLeaf,
+  toBigString,
+  toBigNumber,
   getAddress,
   getContract,
   getCurrentBlock
