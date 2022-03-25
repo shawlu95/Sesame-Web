@@ -24,7 +24,7 @@ export const useAPR = () => {
   if (staked && reward) {
     staked = parseFloat(staked.mul(1000).div(ether));
     reward = parseFloat(reward.mul(1000).div(ether));
-    return 100 * (reward * blocksPerDay * 365) / staked - 1;
+    return 100 * (reward * blocksPerDay * 365) / staked;
   }
   return 0;
 }
