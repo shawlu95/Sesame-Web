@@ -456,6 +456,15 @@
           "netTicketPrice": "0.105"
         }
       ]
+    },
+    "TokenDistributor": {
+      "address": "0x2Ece413d737eD625FeD3Db8E932A1D8B47303dd0"
+    },
+    "Accountant": {
+      "address": "0x1dD6a3c05dDc58527741dBB8a515a581ad460cca"
+    },
+    "PlayerRewardsDistributor": {
+      "address": "0x578A6fB4a01aD096aa1f15e7ad0C0bADE29DE8D7"
     }
   }
 }
