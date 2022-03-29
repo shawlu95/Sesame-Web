@@ -1,346 +1,461 @@
 {
-  "56": {
-    "SESA": {
-      "tokenAddress": "0x1E4d02b43FA67F8A0fec6632F8c636D45A527d4B"
-    },
-    "ETH": {
-      "tokenAddress": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
-    }
-  },
   "97": {
     "BNB": {
-      "tokenAddress": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      "gameToken": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
       "products": [
         {
-          "name": "BNB 钻石盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 2
+          "address": "0x241B5705FAB0DD7D61A2120e536eBF9b0eb8272a",
+          "feePercent": 5,
+          "ticketPrice": "0.05",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.0025",
+          "netTicketPrice": "0.0525"
         },
         {
-          "name": "BNB 钻石盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.05",
-          "ticketPerRound": 2
+          "address": "0x568Aae8dB554e802C590430Af378Ea615C3Ff6f4",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
         },
         {
-          "name": "BNB 钻石盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 2
+          "address": "0x446C38DF6f73EcceB7937D96cc92c4FB4F516BEe",
+          "feePercent": 5,
+          "ticketPrice": "0.25",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.0125",
+          "netTicketPrice": "0.2625"
         },
         {
-          "name": "BNB 钻石盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 2
+          "address": "0x5528c3a36b1199e4Bb054c098562F6348Cecdf9E",
+          "feePercent": 5,
+          "ticketPrice": "0.5",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.025",
+          "netTicketPrice": "0.525"
         },
         {
-          "name": "BNB 钻石盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 2
+          "address": "0x155dE05Cd6aEF98cdb4E8FbA154F445c00dC6707",
+          "feePercent": 5,
+          "ticketPrice": "1",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.05",
+          "netTicketPrice": "1.05"
         },
         {
-          "name": "BNB 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 10
+          "address": "0xCEC0295219B3af71e9e6d4E008D2FDd220c71cd9",
+          "feePercent": 5,
+          "ticketPrice": "2.5",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.125",
+          "netTicketPrice": "2.625"
         },
         {
-          "name": "BNB 铂金盒子",
-          "address": "0x859bBDeB728F850316d9D87D66F56CeB6aF89425",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 10
+          "address": "0x1C95d6F59217276c4d0e60aDdA9dc5b303526C94",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "BNB 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "1.0",
-          "ticketPerRound": 10
+          "address": "0x6dcDF30B6087cEE0ca066dcDccE8B08832E238C5",
+          "feePercent": 5,
+          "ticketPrice": "25",
+          "ticketPerRound": 2,
+          "feePerTicket": "1.25",
+          "netTicketPrice": "26.25"
         },
         {
-          "name": "BNB 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 100
+          "address": "0x5941B12Fed2f78A4113A10dA82185ae8A583bad3",
+          "feePercent": 5,
+          "ticketPrice": "50",
+          "ticketPerRound": 2,
+          "feePerTicket": "2.5",
+          "netTicketPrice": "52.5"
         },
         {
-          "name": "BNB 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 100
+          "address": "0x34F42F80640033b5F87B024B9e06e0e562345B92",
+          "feePercent": 5,
+          "ticketPrice": "250",
+          "ticketPerRound": 2,
+          "feePerTicket": "12.5",
+          "netTicketPrice": "262.5"
         },
         {
-          "name": "BNB 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "1.0",
-          "ticketPerRound": 100
+          "address": "0xccb955ca980a9E848344bc8663D127e786A1a4e1",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
         },
         {
-          "name": "BNB 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 1000
+          "address": "0x542F679038deAC608A9C335c1f5D4520E37878c9",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
         },
         {
-          "name": "BNB 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 1000
+          "address": "0xa292B9fFf22C8BAE6bc79eF6772B87822DAd3c12",
+          "feePercent": 5,
+          "ticketPrice": "1",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.05",
+          "netTicketPrice": "1.05"
         },
         {
-          "name": "BNB 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "1.0",
-          "ticketPerRound": 1000
+          "address": "0x9FBc7892B9c6375Be69E539C3a95C03E23FF86Fc",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
+        },
+        {
+          "address": "0x1E261311f88c2597b5AC6463DaFf07Ff0a6ab7c5",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
+        },
+        {
+          "address": "0xAE5789e3eed9692087d3d40330E2E8D4163202e4",
+          "feePercent": 5,
+          "ticketPrice": "1",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.05",
+          "netTicketPrice": "1.05"
+        },
+        {
+          "address": "0x1B987cB5224aF476fa9a7B8FE3F1785bfd43Fe85",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
+        },
+        {
+          "address": "0xB758689201A58eaBBd25c5396735B27c80405eD0",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
+        },
+        {
+          "address": "0x20Cd607A597BC582E0C72D331701b0FD438E2321",
+          "feePercent": 5,
+          "ticketPrice": "1",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.05",
+          "netTicketPrice": "1.05"
         }
       ]
     },
     "BUSD": {
-      "tokenAddress": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+      "gameToken": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
       "products": [
         {
-          "name": "BUSD 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 10
+          "address": "0xfE4611649630f98d314Ca06a992E2C92C089dF77",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "BUSD 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 10
+          "address": "0x34aF09289a220b8A0eB2Bc3805C23BedA94411b5",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "BUSD 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 10
+          "address": "0x25bf47C956D18ca2d8aB31632fDDd91E67a8ad34",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 10,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         },
         {
-          "name": "BUSD 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 100
+          "address": "0xde90c10C0525b32Ec80bA268f49cD1DE52D93132",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "BUSD 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 100
+          "address": "0xAcC19a92A1bcCA70e80D2FbAe75B20C70Ff9b9Be",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "BUSD 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 100
+          "address": "0xE658C8d7A3ebFB7972a08a4344B58483B86c6De9",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 100,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         },
         {
-          "name": "BUSD 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 1000
+          "address": "0x4809C16823C4FF5e0119F3AA19a436215ea7B630",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "BUSD 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 1000
+          "address": "0xe01eC7CBC7A13eD33c9006179BF9AF377CA1d2F7",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "BUSD 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 1000
+          "address": "0x34e5401Ac3dD6d3BAed1AeF9239Cd951f1Af9763",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 1000,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         }
       ]
     },
     "SESA": {
-      "tokenAddress": "0x3415b8416a4B3f1E0f8acac6438bbdEF9385dC60",
+      "gameToken": "0x704152c069C27f784d2C5ABA2F73C3EaE5950908",
       "products": [
         {
-          "name": "SESA 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 10
+          "address": "0x4fF20aeA3F480dabcD4390C70f9ECd81a88F34eC",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "SESA 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 10
+          "address": "0xff5894f45784dc5C358FF725b1004Bc79e668D97",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "SESA 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 10
+          "address": "0x82a4991eb6B03E21795c090Ef600270aCAC1Ed79",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 10,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         },
         {
-          "name": "SESA 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 100
+          "address": "0x7d9Fb317DCA3d1286d153f71Bd5C74a81D63911e",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "SESA 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 100
+          "address": "0x68074E0972a45B8666806DeeEfA5c21DFc53CCdC",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "SESA 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 100
+          "address": "0x55251ca1f86f3C5070B4eC8402ab48e7d065cd0C",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 100,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         },
         {
-          "name": "SESA 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "5.0",
-          "ticketPerRound": 1000
+          "address": "0x37Fef9bf1A3533FC33Aa6613325D49D102719ABa",
+          "feePercent": 5,
+          "ticketPrice": "5",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.25",
+          "netTicketPrice": "5.25"
         },
         {
-          "name": "SESA 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "10.0",
-          "ticketPerRound": 1000
+          "address": "0x1A632d44eF17e1999295e14f0c8F4Ee3E5864135",
+          "feePercent": 5,
+          "ticketPrice": "10",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.5",
+          "netTicketPrice": "10.5"
         },
         {
-          "name": "SESA 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "100.0",
-          "ticketPerRound": 1000
-        }
-      ]
-    },
-    "BTC": {
-      "tokenAddress": "0x0000000000000000000000000000000000000000",
-      "products": [
-        {
-          "name": "BTC 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 10
-        },
-        {
-          "name": "BTC 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 10
-        },
-        {
-          "name": "BTC 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 10
-        },
-        {
-          "name": "BTC 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 100
-        },
-        {
-          "name": "BTC 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 100
-        },
-        {
-          "name": "BTC 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 100
-        },
-        {
-          "name": "BTC 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 1000
-        },
-        {
-          "name": "BTC 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 1000
-        },
-        {
-          "name": "BTC 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 1000
+          "address": "0x87Ee8B3d6546aE9A9B5A0D8934409e3a678c72db",
+          "feePercent": 5,
+          "ticketPrice": "100",
+          "ticketPerRound": 1000,
+          "feePerTicket": "5",
+          "netTicketPrice": "105"
         }
       ]
     },
     "ETH": {
-      "tokenAddress": "0x8babbb98678facc7342735486c851abd7a0d17ca",
+      "gameToken": "0x8BaBbB98678facC7342735486C851ABD7A0d17Ca",
       "products": [
         {
-          "name": "ETH 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 10
+          "address": "0xA6cF3C0353fd289f73C891fA823Df3915E5b1539",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
         },
         {
-          "name": "ETH 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 10
+          "address": "0x76B2afE36bF18670bd181D25D5BC4bEdF31d91cd",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
         },
         {
-          "name": "ETH 铂金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 10
+          "address": "0x613f0f63518E7C6AB89a574e070abBC6C35722d1",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
         },
         {
-          "name": "ETH 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 100
+          "address": "0xDC1FF8d1B392cAD1F60ae54866d97B3D2eF0c664",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
         },
         {
-          "name": "ETH 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 100
+          "address": "0x833Ae4a8e053c8cC5c397DF9773e7642306DE67f",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
         },
         {
-          "name": "ETH 黄金盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 100
+          "address": "0x002C9588A74A7f7B99b53fb4eDd971c67EF3191F",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
         },
         {
-          "name": "ETH 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.001",
-          "ticketPerRound": 1000
+          "address": "0x129798ce6483b965A6E592dAC74F9679F4a4032A",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
         },
         {
-          "name": "ETH 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.01",
-          "ticketPerRound": 1000
-        },
-        {
-          "name": "ETH 银盒子",
-          "address": "0x0000000000000000000000000000000000000000",
-          "pricePerTicket": "0.1",
-          "ticketPerRound": 1000
+          "address": "0x297bCf1C8d0f558032d2D0a6ed6f903eA0CE5470",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
         }
       ]
     },
-    "TokenDistributor": {
-      "address": "0x2Ece413d737eD625FeD3Db8E932A1D8B47303dd0"
-    },
-    "Accountant": {
-      "address": "0x1dD6a3c05dDc58527741dBB8a515a581ad460cca"
-    },
-    "PlayerRewardsDistributor": {
-      "address": "0x578A6fB4a01aD096aa1f15e7ad0C0bADE29DE8D7"
+    "BTC": {
+      "gameToken": "0x6ce8dA28E2f864420840cF74474eFf5fD80E65B8",
+      "products": [
+        {
+          "address": "0x86F0e43e35004bD79C93c541A9AA20AEC933A5d1",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
+        },
+        {
+          "address": "0x0Bc768B0D4E034bb198708e091C1C3260a68b8ed",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
+        },
+        {
+          "address": "0x3685F3b0B040459Ab26b1f0884dc45D87c18Af36",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 10,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
+        },
+        {
+          "address": "0x24B84Ee2Fb7D86564970fDC96484F572c9Fa96aE",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
+        },
+        {
+          "address": "0xf82FaA09234e6a1229fB36369370cC90975751AC",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
+        },
+        {
+          "address": "0xFB36D07464B206D4B6c6DEd7fE5D6B06211d37C7",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 100,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
+        },
+        {
+          "address": "0x964567b609FEB79A17e37d63aD8C4A40C3e89a7C",
+          "feePercent": 5,
+          "ticketPrice": "0.001",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.00005",
+          "netTicketPrice": "0.00105"
+        },
+        {
+          "address": "0xA16B3B0752C54A54c810E5CdA383f853E7759Efe",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.0005",
+          "netTicketPrice": "0.0105"
+        },
+        {
+          "address": "0x54B49Dcae7d3bcb7C12e37994aD4Fcda8c7c2d2e",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.005",
+          "netTicketPrice": "0.105"
+        }
+      ]
     }
   }
 }
