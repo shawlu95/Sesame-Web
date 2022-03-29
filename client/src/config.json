@@ -21,174 +21,171 @@
       "gameToken": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
       "products": [
         {
-          "address": "0x241B5705FAB0DD7D61A2120e536eBF9b0eb8272a",
+          "address": "0xEfe8b7C6F4FEFE8Cf1246BbC2fab504b2F8e0732",
+          "feePercent": 5,
+          "ticketPrice": "0.01",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.0005",
+          "grade": "STEEL"
+        },
+        {
+          "address": "0xd8d79521d0719Bd83D864195A51ad45651D3baeE",
+          "feePercent": 5,
+          "ticketPrice": "0.025",
+          "ticketPerRound": 2,
+          "feePerTicket": "0.00125",
+          "grade": "STEEL"
+        },
+        {
+          "address": "0xd96acA7514E60e9e192895C2D85fdc310970287b",
           "feePercent": 5,
           "ticketPrice": "0.05",
           "ticketPerRound": 2,
           "feePerTicket": "0.0025",
-          "netTicketPrice": "0.0525",
           "grade": "STEEL"
         },
         {
-          "address": "0x568Aae8dB554e802C590430Af378Ea615C3Ff6f4",
+          "address": "0x4bBeA41b98EE852711492d61Dad28f6AB632d8f3",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 2,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "STEEL"
         },
         {
-          "address": "0x446C38DF6f73EcceB7937D96cc92c4FB4F516BEe",
+          "address": "0x529340d6Af4175027815Fa9E3D069705CA0a8b6a",
           "feePercent": 5,
           "ticketPrice": "0.25",
           "ticketPerRound": 2,
           "feePerTicket": "0.0125",
-          "netTicketPrice": "0.2625",
           "grade": "SILVER"
         },
         {
-          "address": "0x5528c3a36b1199e4Bb054c098562F6348Cecdf9E",
+          "address": "0x117eB719818092307143e3AEcf788958Cc94476A",
           "feePercent": 5,
           "ticketPrice": "0.5",
           "ticketPerRound": 2,
           "feePerTicket": "0.025",
-          "netTicketPrice": "0.525",
           "grade": "SILVER"
         },
         {
-          "address": "0x155dE05Cd6aEF98cdb4E8FbA154F445c00dC6707",
+          "address": "0x6e7963b9fB48F6dd01002405fd6C68187f6F6072",
           "feePercent": 5,
           "ticketPrice": "1",
           "ticketPerRound": 2,
           "feePerTicket": "0.05",
-          "netTicketPrice": "1.05",
           "grade": "GOLD"
         },
         {
-          "address": "0xCEC0295219B3af71e9e6d4E008D2FDd220c71cd9",
+          "address": "0x6179F42f5f3dF8c37a185747E564639824AF3224",
           "feePercent": 5,
           "ticketPrice": "2.5",
           "ticketPerRound": 2,
           "feePerTicket": "0.125",
-          "netTicketPrice": "2.625",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x1C95d6F59217276c4d0e60aDdA9dc5b303526C94",
+          "address": "0xa4Fd2eCC7Ae428794090d7b507B7D633bCB8D385",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 2,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x6dcDF30B6087cEE0ca066dcDccE8B08832E238C5",
+          "address": "0x599E72bbef6926bBdAb0150FA4740f950DF0C857",
           "feePercent": 5,
           "ticketPrice": "25",
           "ticketPerRound": 2,
           "feePerTicket": "1.25",
-          "netTicketPrice": "26.25",
           "grade": "OPAL"
         },
         {
-          "address": "0x5941B12Fed2f78A4113A10dA82185ae8A583bad3",
+          "address": "0xA6637F9913E7c845eF76F0591f834eFA2CB8DD0A",
           "feePercent": 5,
           "ticketPrice": "50",
           "ticketPerRound": 2,
           "feePerTicket": "2.5",
-          "netTicketPrice": "52.5",
           "grade": "OPAL"
         },
         {
-          "address": "0x34F42F80640033b5F87B024B9e06e0e562345B92",
+          "address": "0x828500291F0C80547107edFaC14Ec9aD5d1e076b",
           "feePercent": 5,
           "ticketPrice": "250",
           "ticketPerRound": 2,
           "feePerTicket": "12.5",
-          "netTicketPrice": "262.5",
           "grade": "OPAL"
         },
         {
-          "address": "0xccb955ca980a9E848344bc8663D127e786A1a4e1",
+          "address": "0x1a271A4216D7cf412F85A4DcF5D5E0B65270d90C",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 10,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "STEEL"
         },
         {
-          "address": "0x542F679038deAC608A9C335c1f5D4520E37878c9",
+          "address": "0x4F457b5c178D2555D5Cb2Db8CFB742039EE21595",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 10,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "SILVER"
         },
         {
-          "address": "0xa292B9fFf22C8BAE6bc79eF6772B87822DAd3c12",
+          "address": "0xf7e7546dd4A2342d32AceB284334B1B50AfDe52E",
           "feePercent": 5,
           "ticketPrice": "1",
           "ticketPerRound": 10,
           "feePerTicket": "0.05",
-          "netTicketPrice": "1.05",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x9FBc7892B9c6375Be69E539C3a95C03E23FF86Fc",
+          "address": "0x7a15467f183e04306991Fa762D645D6AD819dBcF",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 100,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "SILVER"
         },
         {
-          "address": "0x1E261311f88c2597b5AC6463DaFf07Ff0a6ab7c5",
+          "address": "0x51e427A88e8F9c5460A52dAe9D5fE3928D1bFe1A",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 100,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0xAE5789e3eed9692087d3d40330E2E8D4163202e4",
+          "address": "0x9dc134e82052eaA94FD443F496F8ea1f81d8cB97",
           "feePercent": 5,
           "ticketPrice": "1",
           "ticketPerRound": 100,
           "feePerTicket": "0.05",
-          "netTicketPrice": "1.05",
           "grade": "OPAL"
         },
         {
-          "address": "0x1B987cB5224aF476fa9a7B8FE3F1785bfd43Fe85",
+          "address": "0x2bd40e9953Be944862D72F8d849E40c38fCa7050",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 1000,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0xB758689201A58eaBBd25c5396735B27c80405eD0",
+          "address": "0x5e393c62e89a1CB3985e37B8548eb24fc1C85638",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 1000,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "OPAL"
         },
         {
-          "address": "0x20Cd607A597BC582E0C72D331701b0FD438E2321",
+          "address": "0xcb206be01cDD28588cA76A49FC4ef5f59199cD7f",
           "feePercent": 5,
           "ticketPrice": "1",
           "ticketPerRound": 1000,
           "feePerTicket": "0.05",
-          "netTicketPrice": "1.05",
           "grade": "OPAL"
         }
       ]
@@ -197,84 +194,75 @@
       "gameToken": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
       "products": [
         {
-          "address": "0xfE4611649630f98d314Ca06a992E2C92C089dF77",
+          "address": "0x45Ce212d2b8334c4c11273d1CBC60d9EB1Fdf6a7",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 10,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "STEEL"
         },
         {
-          "address": "0x34aF09289a220b8A0eB2Bc3805C23BedA94411b5",
+          "address": "0xF331eeF8567A30cC9A4068101e67666566DfdF61",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 10,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "STEEL"
         },
         {
-          "address": "0x25bf47C956D18ca2d8aB31632fDDd91E67a8ad34",
+          "address": "0xCcE562176AA57E27AB2db60E03517383fb6F1E2c",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 10,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "GOLD"
         },
         {
-          "address": "0xde90c10C0525b32Ec80bA268f49cD1DE52D93132",
+          "address": "0x0bB63049f016d8128DE6Eb0bf8bAEC1593d2Cf23",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 100,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "SILVER"
         },
         {
-          "address": "0xAcC19a92A1bcCA70e80D2FbAe75B20C70Ff9b9Be",
+          "address": "0x1709cf21f2a0955a31b78292b55FbB2Fa41814Bb",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 100,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "GOLD"
         },
         {
-          "address": "0xE658C8d7A3ebFB7972a08a4344B58483B86c6De9",
+          "address": "0x1C8B76B247A5D6Cd1c6856187E13db57aA002758",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 100,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x4809C16823C4FF5e0119F3AA19a436215ea7B630",
+          "address": "0x0D29d1948E833533f8152bd8f89A8AdFdfccfd2a",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 1000,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "DIAMOND"
         },
         {
-          "address": "0xe01eC7CBC7A13eD33c9006179BF9AF377CA1d2F7",
+          "address": "0x7B3CC07A35Bc15BB4D1999aC305B212C65D46F22",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 1000,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x34e5401Ac3dD6d3BAed1AeF9239Cd951f1Af9763",
+          "address": "0xD9DcF236F82261F709f1Eb0924BA16D2C2f1bd58",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 1000,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "OPAL"
         }
       ]
@@ -283,84 +271,75 @@
       "gameToken": "0x704152c069C27f784d2C5ABA2F73C3EaE5950908",
       "products": [
         {
-          "address": "0x4fF20aeA3F480dabcD4390C70f9ECd81a88F34eC",
+          "address": "0x24A20728F5cbD6BC0A9fA152ae2028037505C8d0",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 10,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "STEEL"
         },
         {
-          "address": "0xff5894f45784dc5C358FF725b1004Bc79e668D97",
+          "address": "0x712067Fb842769f5aFa22b59A1c66217F08d0C1C",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 10,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "STEEL"
         },
         {
-          "address": "0x82a4991eb6B03E21795c090Ef600270aCAC1Ed79",
+          "address": "0x6cdA191ead80f40b688518C671fB7a8F1deaF381",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 10,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "GOLD"
         },
         {
-          "address": "0x7d9Fb317DCA3d1286d153f71Bd5C74a81D63911e",
+          "address": "0x35c8D9B8835e82a80bD918D043903CdA62266326",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 100,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "SILVER"
         },
         {
-          "address": "0x68074E0972a45B8666806DeeEfA5c21DFc53CCdC",
+          "address": "0x247072Bf7f222423bee3b7d1C1A12B967b6cB70f",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 100,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "GOLD"
         },
         {
-          "address": "0x55251ca1f86f3C5070B4eC8402ab48e7d065cd0C",
+          "address": "0x0996D03490c250FDEFeA92Dc20D9f5771688CD27",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 100,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x37Fef9bf1A3533FC33Aa6613325D49D102719ABa",
+          "address": "0x7210A0f3CcCeA465dE90c3a616CddB2ACfF6cBc5",
           "feePercent": 5,
           "ticketPrice": "5",
           "ticketPerRound": 1000,
           "feePerTicket": "0.25",
-          "netTicketPrice": "5.25",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x1A632d44eF17e1999295e14f0c8F4Ee3E5864135",
+          "address": "0x2E4BB69C01Ac8237fb29f92BaD3832e06FfA4296",
           "feePercent": 5,
           "ticketPrice": "10",
           "ticketPerRound": 1000,
           "feePerTicket": "0.5",
-          "netTicketPrice": "10.5",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x87Ee8B3d6546aE9A9B5A0D8934409e3a678c72db",
+          "address": "0x69d73878d72E985C8bF61b680617B5D8C17a983e",
           "feePercent": 5,
           "ticketPrice": "100",
           "ticketPerRound": 1000,
           "feePerTicket": "5",
-          "netTicketPrice": "105",
           "grade": "OPAL"
         }
       ]
@@ -369,75 +348,75 @@
       "gameToken": "0x8BaBbB98678facC7342735486C851ABD7A0d17Ca",
       "products": [
         {
-          "address": "0xA6cF3C0353fd289f73C891fA823Df3915E5b1539",
+          "address": "0x0C9A857d4DFf613785e9e9083F25Bd0AeeA5B737",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 10,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "STEEL"
         },
         {
-          "address": "0x76B2afE36bF18670bd181D25D5BC4bEdF31d91cd",
+          "address": "0x5c8192B5A9cE6eF0303adC08C018F757A0790B07",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 10,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "SILVER"
         },
         {
-          "address": "0x613f0f63518E7C6AB89a574e070abBC6C35722d1",
+          "address": "0x34Ee8674A66D31Ae4279D2182C28AEe7910eF912",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 10,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0xDC1FF8d1B392cAD1F60ae54866d97B3D2eF0c664",
+          "address": "0xa01366fd727D6aa595608bb76E788C8Dadb0B79d",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 100,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "SILVER"
         },
         {
-          "address": "0x833Ae4a8e053c8cC5c397DF9773e7642306DE67f",
+          "address": "0xB410f9B443e63E21762B57B6e984dE6b7A520B52",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 100,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x002C9588A74A7f7B99b53fb4eDd971c67EF3191F",
+          "address": "0x38664d52729CdFcE74AcC2c218b2C61f069cEF6A",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 100,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "OPAL"
         },
         {
-          "address": "0x129798ce6483b965A6E592dAC74F9679F4a4032A",
+          "address": "0x9a8aD78C4c029Ee0F505faf5d07B9083a51D6ef7",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 1000,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x297bCf1C8d0f558032d2D0a6ed6f903eA0CE5470",
+          "address": "0x293f8872b861eb49b904651bF4aD35BeB2b30871",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 1000,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
+          "grade": "OPAL"
+        },
+        {
+          "address": "0xedD368c41a56f4E5075915392f4B21C96abE9fEa",
+          "feePercent": 5,
+          "ticketPrice": "0.1",
+          "ticketPerRound": 1000,
+          "feePerTicket": "0.005",
           "grade": "OPAL"
         }
       ]
@@ -446,84 +425,75 @@
       "gameToken": "0x6ce8dA28E2f864420840cF74474eFf5fD80E65B8",
       "products": [
         {
-          "address": "0x86F0e43e35004bD79C93c541A9AA20AEC933A5d1",
+          "address": "0x362a528f454b5d343Fbc9c321d8aa1c80d0f3eEd",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 10,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "SILVER"
         },
         {
-          "address": "0x0Bc768B0D4E034bb198708e091C1C3260a68b8ed",
+          "address": "0x482a42c56A5444fA7c0498EaB6B2A90751228f60",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 10,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0x3685F3b0B040459Ab26b1f0884dc45D87c18Af36",
+          "address": "0xD2781607715598d7EFe2fAa92414C71978985fA5",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 10,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "OPAL"
         },
         {
-          "address": "0x24B84Ee2Fb7D86564970fDC96484F572c9Fa96aE",
+          "address": "0xB7B90789204A88afE1553C0BFe10E455841CE7b2",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 100,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "DIAMOND"
         },
         {
-          "address": "0xf82FaA09234e6a1229fB36369370cC90975751AC",
+          "address": "0xC2DD8b7b5340baFA2a9C99f617c6F2EdC044a26F",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 100,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "OPAL"
         },
         {
-          "address": "0xFB36D07464B206D4B6c6DEd7fE5D6B06211d37C7",
+          "address": "0xB7DBf270B968d8b5f1Df0915F3666da001CF820D",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 100,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "OPAL"
         },
         {
-          "address": "0x964567b609FEB79A17e37d63aD8C4A40C3e89a7C",
+          "address": "0xdB216B463c848c97B90E1fd142995EBC46Bd6e90",
           "feePercent": 5,
           "ticketPrice": "0.001",
           "ticketPerRound": 1000,
           "feePerTicket": "0.00005",
-          "netTicketPrice": "0.00105",
           "grade": "OPAL"
         },
         {
-          "address": "0xA16B3B0752C54A54c810E5CdA383f853E7759Efe",
+          "address": "0xE60984Ea42b144A16380f459Ea76Ee075F0F9d86",
           "feePercent": 5,
           "ticketPrice": "0.01",
           "ticketPerRound": 1000,
           "feePerTicket": "0.0005",
-          "netTicketPrice": "0.0105",
           "grade": "OPAL"
         },
         {
-          "address": "0x54B49Dcae7d3bcb7C12e37994aD4Fcda8c7c2d2e",
+          "address": "0x042b5a763c88D7C79CDea6fF72a59DcAffC593b3",
           "feePercent": 5,
           "ticketPrice": "0.1",
           "ticketPerRound": 1000,
           "feePerTicket": "0.005",
-          "netTicketPrice": "0.105",
           "grade": "OPAL"
         }
       ]
