@@ -90,7 +90,7 @@
           "ticketPerRound": 2,
           "feePerTicket": "1.25",
           "netTicketPrice": "26.25",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x5941B12Fed2f78A4113A10dA82185ae8A583bad3",
@@ -99,7 +99,7 @@
           "ticketPerRound": 2,
           "feePerTicket": "2.5",
           "netTicketPrice": "52.5",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x34F42F80640033b5F87B024B9e06e0e562345B92",
@@ -108,7 +108,7 @@
           "ticketPerRound": 2,
           "feePerTicket": "12.5",
           "netTicketPrice": "262.5",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0xccb955ca980a9E848344bc8663D127e786A1a4e1",
@@ -162,7 +162,7 @@
           "ticketPerRound": 100,
           "feePerTicket": "0.05",
           "netTicketPrice": "1.05",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x1B987cB5224aF476fa9a7B8FE3F1785bfd43Fe85",
@@ -180,7 +180,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.005",
           "netTicketPrice": "0.105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x20Cd607A597BC582E0C72D331701b0FD438E2321",
@@ -189,7 +189,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.05",
           "netTicketPrice": "1.05",
-          "grade": "EURO"
+          "grade": "OPAL"
         }
       ]
     },
@@ -275,7 +275,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "5",
           "netTicketPrice": "105",
-          "grade": "EURO"
+          "grade": "OPAL"
         }
       ]
     },
@@ -361,7 +361,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "5",
           "netTicketPrice": "105",
-          "grade": "EURO"
+          "grade": "OPAL"
         }
       ]
     },
@@ -420,7 +420,7 @@
           "ticketPerRound": 100,
           "feePerTicket": "0.005",
           "netTicketPrice": "0.105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x129798ce6483b965A6E592dAC74F9679F4a4032A",
@@ -438,7 +438,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.0005",
           "netTicketPrice": "0.0105",
-          "grade": "EURO"
+          "grade": "OPAL"
         }
       ]
     },
@@ -470,7 +470,7 @@
           "ticketPerRound": 10,
           "feePerTicket": "0.005",
           "netTicketPrice": "0.105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x24B84Ee2Fb7D86564970fDC96484F572c9Fa96aE",
@@ -488,7 +488,7 @@
           "ticketPerRound": 100,
           "feePerTicket": "0.0005",
           "netTicketPrice": "0.0105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0xFB36D07464B206D4B6c6DEd7fE5D6B06211d37C7",
@@ -497,7 +497,7 @@
           "ticketPerRound": 100,
           "feePerTicket": "0.005",
           "netTicketPrice": "0.105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x964567b609FEB79A17e37d63aD8C4A40C3e89a7C",
@@ -506,7 +506,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.00005",
           "netTicketPrice": "0.00105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0xA16B3B0752C54A54c810E5CdA383f853E7759Efe",
@@ -515,7 +515,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.0005",
           "netTicketPrice": "0.0105",
-          "grade": "EURO"
+          "grade": "OPAL"
         },
         {
           "address": "0x54B49Dcae7d3bcb7C12e37994aD4Fcda8c7c2d2e",
@@ -524,7 +524,7 @@
           "ticketPerRound": 1000,
           "feePerTicket": "0.005",
           "netTicketPrice": "0.105",
-          "grade": "EURO"
+          "grade": "OPAL"
         }
       ]
     }
