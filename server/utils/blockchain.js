@@ -32,7 +32,7 @@ const toBigNumber = (bigInt) => {
 };
 
 const getAddress = (contract) => {
-  return config[chainId][contract].address;
+  return config[chainId].sys[contract].address;
 };
 
 const getCurrentBlock = () => {
