@@ -1,0 +1,90 @@
+openapi: 3.0.0
+info:
+  title: Sesame
+  contact: {}
+  version: '1.0'
+servers:
+- url: https://sesame-web.herokuapp.com/api/v1
+  variables: {}
+paths:
+  /player/{player}/ticket:
+    parameters:
+    - name: player
+      in: path
+      description: 'Get all tickets of a player'
+      example: '0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e'
+      required: true
+      style: simple
+      schema:
+        type: string
+    get:
+      tags:
+      - Read Only
+      summary: Get Player Tickets
+      operationId: GetPlayerTickets
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+      security: []
+  /player/rank:
+    get:
+      tags:
+      - Read Only
+      summary: Get all players rank
+      operationId: GetPlayerRank
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+      security: []
+  /player/{player}/{product}/10:
+    parameters:
+    - name: player
+      in: path
+      description: 'Player address'
+      example: '0x8fab07df0D43b6752659b06C697C67F2225Fe6bd'
+      required: true
+      style: simple
+      schema:
+        type: string
+    - name: product
+      in: path
+      description: 'Product address'
+      example: '0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD'
+      required: true
+      style: simple
+      schema:
+        type: string
+    get:
+      tags:
+      - Read Only
+      summary: Get single product details
+      operationId: GetPlayerProduct
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+      security: []
+  /contract:
+    get:
+      tags:
+      - Read Only
+      summary: Get all contracts
+      operationId: GetContracts
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      deprecated: false
+      security: []
+tags:
+- name: Read Only
+  description: ''

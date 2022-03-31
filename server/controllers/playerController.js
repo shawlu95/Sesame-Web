@@ -1,18 +1,22 @@
+const { StatusCodes } = require('http-status-codes');
+
 const Credit = require('../model/credit');
 const blockchain = require('../utils/blockchain');
 const contract = require('./contractController');
+const { rankInfo, ticketInfo, playerProductInfo } = require('../db/mock');
 
-const getTicketsForProduct = async (req, res) => {
-  const { product, player } = req.params;
-  const address = blockchain.getAddress(product);
-  const credits = await Credit.getByUserProduct(player, address);
-  return res.status(200).json(credits)
+const getRanking = async (req, res) => {
+  return res.status(200).json(rankInfo)
 };
 
 const getTickets = async (req, res) => {
   const { player } = req.params;
-  const credits = await Credit.getByUser(player);
-  return res.status(200).json(credits)
+  return res.status(StatusCodes.OK).json(ticketInfo);
 };
 
-module.exports = { getTicketsForProduct, getTickets };
+const getPlayerProduct = async (req, res) => {
+  const { player, product, limit } = req.params;
+  return res.status(StatusCodes.OK).json(playerProductInfo);
+};
+
+module.exports = { getRanking, getTickets, getPlayerProduct };
