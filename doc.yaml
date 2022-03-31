@@ -42,7 +42,7 @@ paths:
           headers: {}
       deprecated: false
       security: []
-  /player/{player}/{product}/10:
+  /player/{player}/{product}/{limit}:
     parameters:
     - name: player
       in: path
@@ -60,6 +60,14 @@ paths:
       style: simple
       schema:
         type: string
+    - name: limit
+      in: path
+      description: 'How many rounds of history to return'
+      example: 10
+      required: true
+      style: simple
+      schema:
+        type: number
     get:
       tags:
       - Read Only
