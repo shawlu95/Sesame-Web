@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "set NODE_ENV=test && mocha ./server/test",
-    "heroku-postbuild": "cd client && npm install && npm run build",
     "dev": "NODE_ENV=dev nodemon server/index.js",
     "start": "NODE_ENV=prod node server/index.js"
   },
