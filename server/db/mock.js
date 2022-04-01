@@ -134,16 +134,16 @@ const playerProductInfo = {
       {
         // 我赢得最多，买了四张票，赢了两轮，总价值884美元
         "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "myTicket": 4,
-        "round": 2,
-        "prize": 884
+        "myTicket": 4, // 买了四张票
+        "wins": 2, // 中了两轮奖
+        "prize": 884 // 总价值884美元
       },
       {
         // 第二名买了一张票，赢了一轮
         "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
-        "myTicket": 1,
-        "round": 1,
-        "prize": 442
+        "myTicket": 1, // 买了一张票
+        "wins": 1, // 中了一轮奖
+        "prize": 442 // 总价值442 美元
       }
     ]
   }
