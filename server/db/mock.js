@@ -5,18 +5,30 @@ const rankInfo = {
     "rank": [
       {
         "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "wins": 2, // 赢了2轮
-        "prize": 884 // 总奖金884美元
+        "win": 9,
+        "prize": 2164
+      },
+      {
+        "player": "0x3cFE84817Ae61F7Bc8d710D2Bef9f746f3715b80",
+        "win": 4,
+        "prize": 1720
       },
       {
         "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
-        "wins": 3,
-        "prize": 618
+        "win": 7,
+        "prize": 794
       },
       {
         "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
-        "wins": 1,
-        "prize": 44
+        "win": 7,
+        "prize": 472
+      }
+    ],
+    "total": [
+      {
+        "prize": 5150,
+        "round": 27,
+        "winner": 4
       }
     ]
   }
