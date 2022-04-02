@@ -1,8 +1,14 @@
 const blockchain = require('../utils/blockchain');
+const { token } = require('../db/mock');
 
 const getAll = (req, res) => {
   const product = require('../../client/src/config.json');
   res.status(200).json(product);
+};
+
+const getToken = (req, res) => {
+  console.log("getToken");
+  res.status(200).json(token);
 };
 
 const getAddress = (req, res) => {
@@ -43,5 +49,5 @@ const getRecentWinner = async (req, res) => {
 };
 
 module.exports = {
-  getAll, getAddress, getRound, getCurrentRoundTicket, getTicketForRound, getRecentWinner
+  getAll, getToken, getAddress, getRound, getCurrentRoundTicket, getTicketForRound, getRecentWinner
 };

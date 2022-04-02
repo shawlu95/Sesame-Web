@@ -154,4 +154,32 @@ const playerProductInfo = {
   }
 };
 
-module.exports = { playerProductInfo, ticketInfo, rankInfo };
+const token = {
+  "data": {
+    "stat": [
+      {
+        "token": "BNB",
+        "prize_token": 0,
+        "prize_usd": 652,
+        "player": 3,
+        "round": 11
+      }
+    ],
+    "map": {
+      "BNB": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+      "BUSD": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+      "SESA": "0x9c924A81572656b8a0e75b41C56D6fcc94826849",
+      "ETH": "0x8BaBbB98678facC7342735486C851ABD7A0d17Ca",
+      "BTC": "0x6ce8dA28E2f864420840cF74474eFf5fD80E65B8"
+    },
+    "reverseMap": {
+      "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd": "BNB",
+      "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7": "BUSD",
+      "0x9c924A81572656b8a0e75b41C56D6fcc94826849": "SESA",
+      "0x8BaBbB98678facC7342735486C851ABD7A0d17Ca": "ETH",
+      "0x6ce8dA28E2f864420840cF74474eFf5fD80E65B8": "BTC"
+    }
+  }
+}
+
+module.exports = { playerProductInfo, ticketInfo, rankInfo, token };
