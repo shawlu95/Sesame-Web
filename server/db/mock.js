@@ -62,93 +62,107 @@ const ticketInfo = {
 const playerProductInfo = {
   "data": {
     "product": {
-      "version": "BNB", // 盒子币种，"BNB"
-      "gameToken": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd", // 盒子币种的地址
+      "version": "BNB",
+      "gameToken": "0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
       "feePercent": 5,
-      "ticketPrice": "0.5", // 
-      "ticketPerRound": 2, // 开奖条件：满10人后开盲盒
-      "grade": "SILVER" // 盒子外观, "银盒子"
+      "ticketPrice": "0.05",
+      "ticketPerRound": 2,
+      "grade": "STEEL"
     },
-    "myTicket": [ // 用户在当前盒子下所有的历史购买记录
+    "myTicket": [
       {
-        "product": "0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD", // 该盒子的地址
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd", // 用户地址
-        "credit": 221, // 花了221 美元
-        "round": 1, // 第一轮奖池
-        "ticket": 1, // 买了一张票
-        "block": 18032993
-      },
-      {
-        "product": "0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD",
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "credit": 221,
-        "round": 2, // 第二轮奖池
-        "ticket": 1, // 买了一张票
-        "block": 18033010
-      },
-      {
-        "product": "0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD",
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "credit": 221,
-        "round": 2, // 第二轮奖池
-        "ticket": 1, // 又买了一张票，分两单买的
-        "block": 18033013
-      },
-      {
-        "product": "0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD",
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "credit": 221,
-        "round": 3,
+        "product": "0x569adf72Ad0633FD3EbF1B21b797DE413Ae8bF7F",
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "credit": 22,
+        "round": 1,
         "ticket": 1,
-        "block": 18033018
+        "block": 18081680,
+        "version": "BNB",
+        "ticketPrice": "0.05",
+        "ticketPerRound": 2,
+        "prize": 0.1
       },
       {
-        "product": "0x875dD95cbbb87f51eE2670CACb3eC6ca9D790caD",
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "credit": 221,
-        "round": 3,
+        "product": "0x569adf72Ad0633FD3EbF1B21b797DE413Ae8bF7F",
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "credit": 22,
+        "round": 1,
         "ticket": 1,
-        "block": 18033034
+        "block": 18081682,
+        "version": "BNB",
+        "ticketPrice": "0.05",
+        "ticketPerRound": 2,
+        "prize": 0.1
+      },
+      {
+        "product": "0x569adf72Ad0633FD3EbF1B21b797DE413Ae8bF7F",
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "credit": 44,
+        "round": 2,
+        "ticket": 2,
+        "block": 18081685,
+        "version": "BNB",
+        "ticketPrice": "0.05",
+        "ticketPerRound": 2,
+        "prize": 0.1
       }
     ],
-    "myWin": {
-      "round": 2, // 用户赢了2轮
-      "prize": 884 //总奖金值884美元
-    },
-    "history": [ // 盲盒的开奖记录
+    "myWin": [
+      {
+        "win": 2,
+        "prize": 88
+      }
+    ],
+    "history": [
+      {
+        "round": 6,
+        "myTicket": 0,
+        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
+        "prize": 44
+      },
+      {
+        "round": 5,
+        "myTicket": 0,
+        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
+        "prize": 44
+      },
+      {
+        "round": 4,
+        "myTicket": 0,
+        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
+        "prize": 44
+      },
       {
         "round": 3,
-        "myTicket": 2,// 第三轮我买了2张票，赢家是我自己
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "prize": 442 // 奖金价值442美元
+        "myTicket": 0,
+        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
+        "prize": 44
       },
       {
         "round": 2,
-        "myTicket": 2, // 第二轮我买了2张票，赢家是我自己
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "prize": 442 // 奖金价值442美元
+        "myTicket": 2,
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "prize": 44
       },
       {
         "round": 1,
-        "myTicket": 1, // 第一轮我买了1张票，赢家是别人
-        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
-        "prize": 442 // 奖金价值442美元
+        "myTicket": 2,
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "prize": 44
       }
     ],
-    "ranking": [ // 该盲盒的排行榜
+    "ranking": [
       {
-        // 我赢得最多，买了四张票，赢了两轮，总价值884美元
-        "player": "0x8fab07df0D43b6752659b06C697C67F2225Fe6bd",
-        "myTicket": 4, // 买了四张票
-        "wins": 2, // 中了两轮奖
-        "prize": 884 // 总价值884美元
+        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
+        "myTicket": 0,
+        "win": 4,
+        "prize": 176
       },
       {
-        // 第二名买了一张票，赢了一轮
-        "player": "0x456614A49Fd04F7fF86064f79cbb5fb31775a34f",
-        "myTicket": 1, // 买了一张票
-        "wins": 1, // 中了一轮奖
-        "prize": 442 // 总价值442 美元
+        "player": "0x4Cd5675c4f70513e361AA77B70e8089FB5429A0e",
+        "myTicket": 4,
+        "win": 2,
+        "prize": 88
       }
     ]
   }
